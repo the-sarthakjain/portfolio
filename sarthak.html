@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Sarthak Jain — Developer Portfolio. Passionate application and web developer dedicated to crafting modern, high-performance digital experiences." />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Remix Icon CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.css" rel="stylesheet" />
+
+  <link rel="stylesheet" href="sarthak.css" />
+  <title>Sarthak Jain — Portfolio</title>
+</head>
+
+<body>
+
+  <!-- ========== Aurora Background ========== -->
+  <div class="aurora-bg">
+    <div class="aurora-orb"></div>
+  </div>
+
+  <!-- ========== Fish Animation Canvas ========== -->
+  <canvas id="fishCanvas" class="fish-canvas"></canvas>
+
+  <!-- ========== Navbar ========== -->
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <a href="#home" class="nav-logo">Sarthak Jain</a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#tools">Tools</a></li>
+        <li><a href="#project">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <main class="container">
+
+    <!-- ========== Hero Section ========== -->
+    <section class="hero-section" id="home">
+      <div class="hero-grid">
+        <!-- Left Column -->
+        <div>
+          <div class="hero-badge hero-enter hero-enter-delay-1">
+            <img src="./sarthak_profile.png" alt="Sarthak" class="badge-avatar-img" />
+            <q>Avoid or just undertake it</q>
+          </div>
+
+          <h1 class="hero-title hero-enter hero-enter-delay-2">
+            <span class="shiny-text">Hi I'm Sarthak Jain</span>
+          </h1>
+
+          <p class="hero-description hero-enter hero-enter-delay-3">
+            I am a passionate AI Engineer specializing in computer vision, generative AI, and real-time media
+            intelligence. Currently working full-time as Engineering Executive at Skandha Media Services, I design and
+            deploy production-grade AI solutions
+          </p>
+
+          <div class="hero-buttons hero-enter hero-enter-delay-4">
+            <a href="#contact" class="btn">
+              <span class="shiny-text">Download CV</span>
+            </a>
+            <a href="#project" class="btn">
+              <span class="shiny-text">Explore My Projects</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Right Column: Profile Card -->
+        <div class="hero-enter hero-enter-delay-4">
+          <div class="pc-card-wrapper" id="profileCard">
+            <section class="pc-card">
+              <div class="pc-inside">
+                <div class="pc-shine"></div>
+                <div class="pc-glare"></div>
+                <div class="pc-content pc-avatar-content">
+                  <img class="avatar" src="./sarthak_profile.png" alt="Avatar" />
+                  <div class="pc-user-info">
+                    <div class="pc-user-details">
+                      <div class="pc-mini-avatar">
+                        <img src="./sarthak_profile.png" alt="Mini avatar" />
+                      </div>
+                      <div class="pc-user-text">
+                        <div class="pc-handle">@sarthakjain</div>
+
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+                <div class="pc-content">
+                  <div class="pc-details">
+                    <h3>Sarthak Jain</h3>
+                    <p>AI Engineer</p>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== About Section ========== -->
+    <section class="section" id="about">
+      <div class="about-card fade-up">
+        <!-- Left -->
+        <div class="about-left">
+          <h2 class="section-title">About Me</h2>
+
+          <p class="about-text">
+            I’m Sarthak Jain, an AI Engineer passionate about building modern,
+            high-performance AI applications and beautifully animated websites with
+            an intuitive user experience. I enjoy working with the latest technologies
+            like Computer Vision, Generative AI, Machine Learning, and front-end development,
+            blending creativity with precision to deliver impactful solutions.
+          </p>
+
+          <div class="stats-row">
+            <div class="stat-item">
+              <div class="stat-number">12<span>+</span></div>
+              <div class="stat-label">Projects Finished</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number">1<span>+</span></div>
+              <div class="stat-label">Years of Experience</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number">8.36<span>/10</span></div>
+              <div class="stat-label">CGPA</div>
+            </div>
+          </div>
+
+          <p class="about-quote shiny-text">
+            "Working with heart, creating with mind."
+          </p>
+        </div>
+
+        <!-- Right: Lanyard/About Picture -->
+        <div class="about-right">
+          <div class="lanyard-container" id="lanyardContainer">
+            <div class="lanyard-string" id="lanyardString"></div>
+            <div class="lanyard-card-2d" id="lanyardCard">
+              <div class="lanyard-hole"></div>
+              <img src="./sarthak_profile.png" alt="ID Card Avatar" />
+              <h4>Sarthak Jain</h4>
+              <p>@sarthakjain</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== Tools & Technologies ========== -->
+    <section class="section" id="tools">
+      <h2 class="section-title fade-up">Tools & Technologies</h2>
+      <p class="section-subtitle fade-up">My Professional Skills</p>
+
+      <div class="tools-grid stagger-children">
+        <!-- Row 1 -->
+        <div class="tool-card fade-up">
+          <div class="tool-icon"><i class="ri-code-s-slash-line"></i></div>
+          <div class="tool-info">
+            <h4 class="shiny-text">VS Code</h4>
+            <p>Code Editor</p>
+          </div>
+        </div>
+        <div class="tool-card fade-up">
+          <div class="tool-icon"><i class="ri-reactjs-line"></i></div>
+          <div class="tool-info">
+            <h4 class="shiny-text">React JS</h4>
+            <p>Framework</p>
+          </div>
+        </div>
+        <div class="tool-card fade-up">
+          <div class="tool-icon"><i class="ri-nextjs-fill"></i></div>
+          <div class="tool-info">
+            <h4 class="shiny-text">Next JS</h4>
+            <p>Framework</p>
+          </div>
+        </div>
+        <div class="tool-card fade-up">
+          <div class="tool-icon"><i class="ri-tailwind-css-fill"></i></div>
+          <div class="tool-info">
+            <h4 class="shiny-text">Tailwind CSS</h4>
+            <p>Framework</p>
+          </div>
+        </div>
+        <!-- Row 2 -->
+        <div class="tool-card fade-up">
+          <div class="tool-icon"><i class="ri-bootstrap-fill"></i></div>
+          <div class="tool-info">
+            <h4 class="shiny-text">Bootstrap</h4>
+            <p>Framework</p>
+          </div>
+        </div>
+        <div class="tool-card fade-up">
+          <div class="tool-icon"><i class="ri-javascript-fill"></i></div>
+          <div class="tool-info">
+            <h4 class="shiny-text">JavaScript</h4>
+            <p>Language</p>
+          </div>
+        </div>
+        <div class="tool-card fade-up">
+          <div class="tool-icon"><i class="ri-nodejs-fill"></i></div>
+          <div class="tool-info">
+            <h4 class="shiny-text">Node JS</h4>
+            <p>JS Runtime</p>
+          </div>
+        </div>
+        <div class="tool-card fade-up">
+          <div class="tool-icon"><i class="ri-github-fill"></i></div>
+          <div class="tool-info">
+            <h4 class="shiny-text">GitHub</h4>
+            <p>Repository</p>
+          </div>
+        </div>
+        <!-- Row 3 -->
+        <div class="tool-card fade-up">
+          <div class="tool-icon"><i class="ri-adobe-fill"></i></div>
+          <div class="tool-info">
+            <h4 class="shiny-text">Illustrator</h4>
+            <p>Design App</p>
+          </div>
+        </div>
+        <div class="tool-card fade-up">
+          <div class="tool-icon"><i class="ri-palette-fill"></i></div>
+          <div class="tool-info">
+            <h4 class="shiny-text">Canva</h4>
+            <p>Design App</p>
+          </div>
+        </div>
+        <div class="tool-card fade-up">
+          <div class="tool-icon"><i class="ri-figma-fill"></i></div>
+          <div class="tool-info">
+            <h4 class="shiny-text">Figma</h4>
+            <p>Design App</p>
+          </div>
+        </div>
+        <div class="tool-card fade-up">
+          <div class="tool-icon"><i class="ri-smartphone-fill"></i></div>
+          <div class="tool-info">
+            <h4 class="shiny-text">Kotlin</h4>
+            <p>Language</p>
+          </div>
+        </div>
+        <!-- Row 4 -->
+        <div class="tool-card fade-up">
+          <div class="tool-icon"><i class="ri-fire-fill"></i></div>
+          <div class="tool-info">
+            <h4 class="shiny-text">Firebase</h4>
+            <p>Backend</p>
+          </div>
+        </div>
+        <div class="tool-card fade-up">
+          <div class="tool-icon"><i class="ri-html5-fill"></i></div>
+          <div class="tool-info">
+            <h4 class="shiny-text">HTML</h4>
+            <p>Language</p>
+          </div>
+        </div>
+        <div class="tool-card fade-up">
+          <div class="tool-icon"><i class="ri-css3-fill"></i></div>
+          <div class="tool-info">
+            <h4 class="shiny-text">CSS</h4>
+            <p>Language</p>
+          </div>
+        </div>
+        <div class="tool-card fade-up">
+          <div class="tool-icon"><i class="ri-terminal-box-fill"></i></div>
+          <div class="tool-info">
+            <h4 class="shiny-text">TypeScript</h4>
+            <p>Language</p>
+          </div>
+        </div>
+        <!-- Row 5 -->
+        <div class="tool-card fade-up">
+          <div class="tool-icon"><i class="ri-code-box-fill"></i></div>
+          <div class="tool-info">
+            <h4 class="shiny-text">PHP</h4>
+            <p>Language</p>
+          </div>
+        </div>
+        <div class="tool-card fade-up">
+          <div class="tool-icon"><i class="ri-flashlight-fill"></i></div>
+          <div class="tool-info">
+            <h4 class="shiny-text">Vite</h4>
+            <p>Build Tool</p>
+          </div>
+        </div>
+        <div class="tool-card fade-up">
+          <div class="tool-icon"><i class="ri-database-2-fill"></i></div>
+          <div class="tool-info">
+            <h4 class="shiny-text">MySQL</h4>
+            <p>Database</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== Projects Section ========== -->
+    <section class="section" id="project">
+      <h2 class="section-title center fade-up">Projects</h2>
+      <p class="section-subtitle center fade-up">
+        Showcasing a selection of projects that reflect my skills, creativity, and passion for building meaningful
+        digital experiences.
+      </p>
+
+      <div class="projects-grid stagger-children">
+
+        <div class="project-card fade-up" data-title="CricTrigger"
+          data-description="I architected and deployed a sophisticated computer vision-based automation system for FanCode that intelligently detects the completion of an over in live cricket broadcasts and instantly triggers targeted advertisement insertion. The end-to-end solution eliminated manual intervention, ensured zero disruption to the viewing experience, and significantly boosted monetization opportunities for Tier-1 sports streaming clients. Built with high accuracy and real-time performance in mind, this project showcased my ability to deliver production-grade AI systems under tight broadcasting deadlines."
+          data-url="https://github.com/sarthakjain" data-gradient="linear-gradient(145deg, #3b82f6, #000)">
+          <div class="project-thumb" style="background: linear-gradient(145deg, #3b82f6, #000)">
+            <div class="project-thumb-overlay"><i class="ri-robot-2-fill"></i></div>
+          </div>
+          <div class="project-body">
+            <h3>CricTrigger</h3>
+            <p>I architected and deployed a sophisticated computer vision-based automation system for FanCode...</p>
+            <span class="project-link">View Details <i class="ri-arrow-right-line"></i></span>
+          </div>
+        </div>
+
+        <div class="project-card fade-up" data-title="Hindi-to-English Voice Translation Engine"
+          data-description="For StarzPlay, I engineered a robust Hindi-to-English voice translation engine that converts Hindi audio content into natural-sounding English while preserving context, tone, and cultural nuances. The system greatly enhanced content accessibility for international streaming audiences, expanding the platform’s global reach without compromising audio quality. This project involved end-to-end development, from model training and fine-tuning to seamless integration into the existing streaming pipeline."
+          data-url="https://hindi-to-eng-voice.lovable.app/" data-gradient="linear-gradient(180deg, #10b981, #000)">
+          <div class="project-thumb" style="background: linear-gradient(180deg, #10b981, #000)">
+            <div class="project-thumb-overlay"><i class="ri-cloud-fill"></i></div>
+          </div>
+          <div class="project-body">
+            <h3>Hindi-to-English Voice Translation Engine</h3>
+            <p>For StarzPlay, I engineered a robust Hindi-to-English voice translation engine that converts...</p>
+            <span class="project-link">View Details <i class="ri-arrow-right-line"></i></span>
+          </div>
+        </div>
+
+        <div class="project-card fade-up" data-title="Cinematic Reel Generator"
+          data-description="I developed an intelligent AI model that automatically generates captivating 30-second cinematic reels from user-uploaded video clips by identifying the most engaging moments and dynamically applying mood-based AI-generated music or custom tracks. The tool streamlines short-form content creation, enabling users to produce professional, platform-ready promotional videos in seconds. This project combined computer vision, audio analysis, and generative AI to deliver a fast, creative, and user-friendly solution for content creators and marketers."
+          data-url="https://cinematic-vibe-creator.lovable.app/" data-gradient="linear-gradient(145deg, #3b82f6, #000)">
+          <div class="project-thumb" style="background: linear-gradient(145deg, #3b82f6, #000)">
+            <div class="project-thumb-overlay"><i class="ri-heart-pulse-fill"></i></div>
+          </div>
+          <div class="project-body">
+            <h3>Cinematic Reel Generator</h3>
+            <p>I developed an intelligent AI model that automatically generates captivating 30-second...</p>
+            <span class="project-link">View Details <i class="ri-arrow-right-line"></i></span>
+          </div>
+        </div>
+
+        <div class="project-card fade-up" data-title="Elite Gym Manager"
+          data-description="As lead developer and founder, I designed and built Elite Gym Manager, a comprehensive desktop application that digitizes membership management and operational workflows for gym owners. The secure platform features password protection, an intuitive date-picker for membership tracking, automated WhatsApp renewal alerts, and a powerful revenue analytics module that provides real-time business insights. Focused on simplicity and efficiency, the application helps gym businesses operate smoothly, reduce administrative overhead, and make data-driven growth decisions."
+          data-url="https://github.com/sarthakjain" data-gradient="linear-gradient(180deg, #10b981, #000)">
+          <div class="project-thumb" style="background: linear-gradient(180deg, #10b981, #000)">
+            <div class="project-thumb-overlay"><i class="ri-global-fill"></i></div>
+          </div>
+          <div class="project-body">
+            <h3>Elite Gym Manager</h3>
+            <p>As lead developer and founder, I designed and built Elite Gym Manager, a comprehensive desktop...</p>
+            <span class="project-link">View Details <i class="ri-arrow-right-line"></i></span>
+          </div>
+        </div>
+
+        <div class="project-card fade-up" data-title="AI-Powered Smart Gallery"
+          data-description="I engineered an AI-Powered Smart Gallery that brings intelligent organization to personal photo collections through advanced computer vision and natural language processing. The system automatically sorts images into four categories (food, nature, group photos, and solo images) with high accuracy, supports natural language search (e.g., “burger,” “sunset,” “woman”) using image embeddings, and includes a responsive pin-to-favorites feature for quick access to marked memories. This full-stack project delivers a modern, intuitive experience that transforms how users discover and manage their visual content."
+          data-url="https://github.com/sarthakjain" data-gradient="linear-gradient(145deg, #3b82f6, #000)">
+          <div class="project-thumb" style="background: linear-gradient(145deg, #3b82f6, #000)">
+            <div class="project-thumb-overlay"><i class="ri-eye-fill"></i></div>
+          </div>
+          <div class="project-body">
+            <h3>AI-Powered Smart Gallery</h3>
+            <p>I engineered an AI-Powered Smart Gallery that brings intelligent organization to personal...</p>
+            <span class="project-link">View Details <i class="ri-arrow-right-line"></i></span>
+          </div>
+        </div>
+
+        <div class="project-card fade-up" data-title="Coffee Shop Website"
+          data-description="A fully functional website designed for a coffee shop, enabling customers to explore the menu, learn about the shop's story, and place orders online. The project focused on creating an attractive and modern interface, integrating responsive design for mobile and desktop, and ensuring smooth navigation for users. This website not only improved customer experience but also supported the coffee shop's digital presence and business growth."
+          data-url="https://github.com/sarthakjain" data-gradient="linear-gradient(180deg, #10b981, #000)">
+          <div class="project-thumb" style="background: linear-gradient(180deg, #10b981, #000)">
+            <div class="project-thumb-overlay"><i class="ri-cup-fill"></i></div>
+          </div>
+          <div class="project-body">
+            <h3>Coffee Shop Website</h3>
+            <p>A fully functional website designed for a coffee shop, enabling menu browsing and online orders...</p>
+            <span class="project-link">View Details <i class="ri-arrow-right-line"></i></span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========== Contact Section ========== -->
+    <section class="section" id="contact">
+      <h2 class="section-title center fade-up">Contact & Chat</h2>
+      <p class="section-subtitle center fade-up">Get in touch with me or chat in real-time</p>
+
+      <div class="contact-grid">
+        <!-- Chat Room -->
+        <div class="contact-left fade-up">
+          <div class="chat-room">
+            <h3><i class="ri-chat-3-fill"></i> Live Chat</h3>
+
+            <div class="chat-messages" id="chatMessages">
+              <div class="chat-message received">
+                <div class="msg-author">Sarthak</div>
+                Hey! Welcome to my portfolio. Feel free to drop a message here 👋
+              </div>
+              <div class="chat-message received">
+                <div class="msg-author">Sarthak</div>
+                I'm always open to discussing new projects and creative ideas!
+              </div>
+            </div>
+
+            <div class="chat-input-row">
+              <input type="text" id="chatInput" placeholder="Type a message..." />
+              <button id="chatSendBtn"><i class="ri-send-plane-fill"></i></button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="contact-right fade-up">
+          <form class="contact-form" id="contactForm" action="https://formsubmit.co/sarthak@example.com" method="POST"
+            autocomplete="off">
+            <div class="form-group">
+              <label for="nameInput">Full Name</label>
+              <input type="text" id="nameInput" name="Name" placeholder="Enter your name..." required />
+            </div>
+            <div class="form-group">
+              <label for="emailInput">Email</label>
+              <input type="email" id="emailInput" name="Email" placeholder="Enter your email..." required />
+            </div>
+            <div class="form-group">
+              <label for="messageInput">Message</label>
+              <textarea id="messageInput" name="message" placeholder="Write your message..." required></textarea>
+            </div>
+            <button type="submit" class="form-submit-btn">
+              <span class="shiny-text">Send Message</span>
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========== Footer ========== -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 Sarthak Jain. All rights reserved.</p>
+      <div class="footer-socials">
+        <a href="https://github.com/the-sarthakjain" target="_blank" aria-label="GitHub"><i
+            class="ri-github-fill"></i></a>
+        <a href="https://www.linkedin.com/in/thesarthak-jain/" target="_blank" aria-label="LinkedIn"><i
+            class="ri-linkedin-fill"></i></a>
+        <a href="https://www.instagram.com/the_sarthak_jain" target="_blank" aria-label="Instagram"><i
+            class="ri-instagram-fill"></i></a>
+        <a href="mailto:jainsarthak4002@gmail.com" aria-label="Email"><i class="ri-mail-fill"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========== Project Modal ========== -->
+  <div class="modal-overlay" id="projectModal">
+    <div class="modal-content">
+      <div class="modal-header" id="modalHeader">
+        <button class="modal-close" id="modalClose">&times;</button>
+        <i class="ri-folder-3-fill"></i>
+      </div>
+      <div class="modal-body">
+        <h2 id="modalTitle"></h2>
+        <p id="modalDescription"></p>
+        <a href="#" id="modalLink" target="_blank" class="btn btn-primary">
+          <i class="ri-github-fill"></i> More Details
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <script src="sarthak.js"></script>
+</body>
+
+</html>
